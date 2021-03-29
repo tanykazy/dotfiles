@@ -12,15 +12,15 @@ eval `/usr/bin/ssh-agent`
 #	SSH_ASKPASS=/usr/lib/openssh/x11-ssh-askpass ssh-add < /dev/null
 #fi
 
-if test -f /usr/lib/ssh/x11-ssh-askpass # Debian
-then
-	SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass ssh-add < /dev/null
-fi
+#if test -f /usr/lib/ssh/x11-ssh-askpass # Debian
+#then
+#	SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass ssh-add < /dev/null
+#fi
 
 # 1280x720 = 720p X220
 #hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date +%Y-%m-%dT%H).jpg &
 
-#xrdb -merge $HOME/.Xresources
+#xrdb -merge -I$HOME .Xresources
 [[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 #xmodmap ~/.Xmodmap
 #setxkbmap -layout gb -option ctrl:nocaps
@@ -33,9 +33,8 @@ while true
 do
 	LOCALTIME="$(date)"
 	BATTERY="$(acpi -b)"
-#	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
-#	xsetroot -name "$IP $LOCALTIME"
-	xsetroot -name "${LOCALTIME} ${BATTERY}"
+	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
+	xsetroot -name "${LOCALTIME} ${BATTERY} ${IP}"
 #	wmname "$LOCALTIME"
 #	slstatus
 	sleep 1s
