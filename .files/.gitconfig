@@ -1,0 +1,12 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
+[merge]
+	tool = vimdiff
+	conflictStyle = diff3
+[diff]
+	tool = vimdiff
+[commit]
+	template = ~/.gitmessage.txt
+[color]
+	ui = auto
