@@ -6,6 +6,7 @@ XTerm*faceSize: 10
 XTerm*cjkWidth: true
 ! XTerm*reverseVideo: true
 
+*customization: color
 *background: #212121
 *foreground: #fafafa
 *color0: #212121
