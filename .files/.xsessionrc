@@ -1,11 +1,8 @@
 #!/bin/bash
 
-# for terminus font in Archlinux :(
-#xset +fp /usr/share/fonts/local
-#xset fp rehash
 
-xset -b # disable bell
-eval `/usr/bin/ssh-agent`
+#xset -b # disable bell
+#eval `/usr/bin/ssh-agent`
 
 #if test -f /usr/lib/openssh/x11-ssh-askpass # Archlinux
 #then
@@ -17,14 +14,11 @@ eval `/usr/bin/ssh-agent`
 #	SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass ssh-add < /dev/null
 #fi
 
-# 1280x720 = 720p X220
-#hash fswebcam && fswebcam -q --no-banner -r 1280x720 ~/private/login-photos/$(date +%Y-%m-%dT%H).jpg &
 
 #xrdb -merge -I$HOME .Xresources
 #[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 setxkbmap -option ctrl:swapcaps
 
-#hash chromium && chromium &
 
 xbindkeys_autostart
 
