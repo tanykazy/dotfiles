@@ -16,13 +16,13 @@ helpmsg() {
 }
 
 upload() {
-	readonly UNAME=$(uname -nr | sed -e 's/ //g')
-	readonly BRANCHNAME=feature/${UNAME}
-	git branch ${BRANCHNAME}
-	git checkout ${BRANCHNAME}
+	readonly NODENAME=$(uname --nodename)
+	readonly KERNELRELEASE=$(uname --kernel-release)
+	git branch ${NODENAME}/${KERNELRELEASE}
+	git checkout ${NODENAME}/${KERNELRELEASE}
 	git add -v ${DOTFILESPATH}
 	git commit -v -m "${MESSAGE}"
-	git push -v origin ${BRANCHNAME}
+	git push -v origin ${NODENAME}/${KERNELRELEASE}
 }
 
 while [ $# -gt 0 ];do
