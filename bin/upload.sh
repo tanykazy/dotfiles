@@ -16,7 +16,8 @@ helpmsg() {
 }
 
 upload() {
-	readonly BRANCHNAME=feature/$(uname -snr)
+	readonly UNAME=$(uname -nr | sed -e 's/ //g')
+	readonly BRANCHNAME=feature/${UNAME}
 	git branch ${BRANCHNAME}
 	git checkout ${BRANCHNAME}
 	git add -v ${DOTFILESPATH}
