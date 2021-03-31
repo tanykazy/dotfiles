@@ -4,8 +4,8 @@
 #xset +fp /usr/share/fonts/local
 #xset fp rehash
 
-xset -b # disable bell
-eval `/usr/bin/ssh-agent`
+#xset -b # disable bell
+#eval `/usr/bin/ssh-agent`
 
 #if test -f /usr/lib/openssh/x11-ssh-askpass # Archlinux
 #then
@@ -22,9 +22,9 @@ eval `/usr/bin/ssh-agent`
 
 #xrdb -merge -I$HOME .Xresources
 #xrdb -merge ~/.Xresources
-[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
+#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 #xmodmap ~/.Xmodmap
-#setxkbmap -layout gb -option ctrl:nocaps
+setxkbmap -option ctrl:nocaps
 
 #hash chromium && chromium &
 
@@ -35,7 +35,7 @@ do
 	LOCALTIME="$(date)"
 	BATTERY="$(acpi -b)"
 	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
-	xsetroot -name "${LOCALTIME} ${BATTERY} ${IP}"
+	xsetroot -name "${IP} ${LOCALTIME} ${BATTERY}"
 #	wmname "$LOCALTIME"
 #	slstatus
 	sleep 1s
