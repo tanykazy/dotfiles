@@ -16,6 +16,9 @@ helpmsg() {
 }
 
 upload() {
+#	readonly BRANCHNAME=feature/$(date +%s)
+#	git branch ${BRANCHNAME}
+#	git checkout ${BRANCHNAME}
 	git add -v ${DOTFILESPATH}
 	git commit -v -m "${MESSAGE}"
 	git push -v
