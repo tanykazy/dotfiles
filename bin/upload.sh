@@ -16,7 +16,7 @@ helpmsg() {
 }
 
 upload() {
-	readonly BRANCHNAME=feature/$(date +%s)
+	readonly BRANCHNAME=feature/$(uname -snr)
 	git branch ${BRANCHNAME}
 	git checkout ${BRANCHNAME}
 	git add -v ${DOTFILESPATH}
