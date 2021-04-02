@@ -1,32 +1,12 @@
 #!/bin/bash
 
-# for terminus font in Archlinux :(
-#xset +fp /usr/share/fonts/local
-#xset fp rehash
+# Swap CapsLock and Ctrl
+#setxkbmap -option ctrl:swapcaps
 
-#xset -b # disable bell
-#eval `/usr/bin/ssh-agent`
-
-#if test -f /usr/lib/openssh/x11-ssh-askpass # Archlinux
-#then
-#	SSH_ASKPASS=/usr/lib/openssh/x11-ssh-askpass ssh-add < /dev/null
-#fi
-
-#if test -f /usr/lib/ssh/x11-ssh-askpass # Debian
-#then
-#	SSH_ASKPASS=/usr/lib/ssh/x11-ssh-askpass ssh-add < /dev/null
-#fi
-
-
-#xrdb -merge -I$HOME .Xresources
-#xrdb -merge ~/.Xresources
-#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
-#xmodmap ~/.Xmodmap
-#setxkbmap -option ctrl:nocaps
-
-
+# Start xbindkeys
 xbindkeys_autostart
 
+# Status text for dwm
 while true
 do
 	LOCALTIME="$(date)"
@@ -38,4 +18,3 @@ do
 #	slstatus
 	sleep 1s
 done &
-
