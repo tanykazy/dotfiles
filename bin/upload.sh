@@ -7,7 +7,7 @@ readonly SCRIPT_NAME=$(basename $0)
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
 readonly DOTFILESPATH=$(cd $(dirname ${SCRIPT_DIR}); pwd)
 
-readonly MESSAGE="Update from $(uname -a) at $(date)"
+readonly MESSAGE="Update from $(uname -snr) at $(date)"
 
 
 helpmsg() {
