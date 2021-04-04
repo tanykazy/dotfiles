@@ -19,7 +19,7 @@ all:
 
 configure:
 	@apt install ${PACKAGES}
-		
+
 
 install:
 	@$(foreach val, $(DOTFILES), \
