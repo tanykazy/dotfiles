@@ -2,6 +2,15 @@
 
 # set -ue
 
+
+
+
+
+
+
+
+
+
 helpmsg() {
   command echo "Usage: $0 [--help | -h]" 0>&2
   command echo ""
@@ -34,22 +43,22 @@ link() {
   fi
 }
 
-while [ $# -gt 0 ];do
-  case ${1} in
-    --debug|-d)
-      set -uex
-      ;;
-    --help|-h)
-      helpmsg
-      exit 1
-      ;;
-    *)
-      ;;
-  esac
-  shift
-done
+#while [ $# -gt 0 ];do
+#  case ${1} in
+#    --debug|-d)
+#      set -uex
+#      ;;
+#    --help|-h)
+#      helpmsg
+#      exit 1
+#      ;;
+#    *)
+#      ;;
+#  esac
+#  shift
+#done
 
-link
+#link
 # git config --global include.path "~/.gitconfig_shared"
 #command echo -e "\e[1;36m Install completed!!!! \e[m"
 

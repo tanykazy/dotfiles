@@ -11,15 +11,14 @@ DOTFILES := $(wildcard $(DOTPATH)/$(DOTFILESDIR)/.??*)
 
 
 
-.PHONY: all list install clean
+.PHONY: all list install clean test
 
 all:
 
 
-list:
-	@$(foreach val, $(DOTFILES), \
-		ls -dF $(val);)
-
+configure:
+	@apt install screen
+	
 
 install:
 	@$(foreach val, $(DOTFILES), \
@@ -29,4 +28,10 @@ install:
 clean:
 	@-$(foreach val, $(DOTFILES), \
 		rm -vf $(HOMEPATH)/$(notdir $(val));)
+
+
+test:
+
+
+
 
