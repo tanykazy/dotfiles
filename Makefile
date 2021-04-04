@@ -9,6 +9,7 @@ DOTPATH := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 DOTFILESDIR := .files
 DOTFILES := $(wildcard $(DOTPATH)/$(DOTFILESDIR)/.??*)
 
+PACKAGES := screen vim
 
 
 .PHONY: all list install clean test
@@ -17,12 +18,12 @@ all:
 
 
 configure:
-	@apt install screen
-	
+	@apt install ${PACKAGES}
+		
 
 install:
 	@$(foreach val, $(DOTFILES), \
-		ln -sfnv $(abspath $(val)) $(HOMEPATH)/$(notdir $(val));)
+		ln -snv $(abspath $(val)) $(HOMEPATH)/$(notdir $(val));)
 
 
 clean:
