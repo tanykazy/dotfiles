@@ -1,13 +1,8 @@
 #!/bin/sh
 
-# set -ue
 
-
-readonly SCRIPT_NAME=$(basename $0)
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
 readonly DOTFILESPATH=$(cd $(dirname ${SCRIPT_DIR}); pwd)
-
-readonly MESSAGE="Update from $(uname -snr) at $(date)"
 
 
 helpmsg() {
@@ -16,13 +11,12 @@ helpmsg() {
 }
 
 upload() {
+	readonly MESSAGE="Update from $(uname -snr) at $(date)"
 	readonly NODENAME=$(uname --nodename)
 	readonly KERNELRELEASE=$(uname --kernel-release)
-	git branch ${NODENAME}/${KERNELRELEASE}
-	git checkout ${NODENAME}/${KERNELRELEASE}
 	git add -v ${DOTFILESPATH}
 	git commit -v -m "${MESSAGE}"
-	git push -v origin ${NODENAME}/${KERNELRELEASE}
+	git push -v origin main:${NODENAME}/${KERNELRELEASE}
 }
 
 while [ $# -gt 0 ];do
