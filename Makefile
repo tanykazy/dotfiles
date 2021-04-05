@@ -9,7 +9,7 @@ DOTPATH := $(realpath $(dir $(lastword $(MAKEFILE_LIST))))
 DOTFILESDIR := .files
 DOTFILES := $(wildcard $(DOTPATH)/$(DOTFILESDIR)/.??*)
 
-PACKAGES := screen vim
+#PACKAGES := screen vim
 
 
 .PHONY: all list install clean test
@@ -17,8 +17,8 @@ PACKAGES := screen vim
 all:
 
 
-configure:
-	@apt install ${PACKAGES}
+#configure:
+#	@apt install $(PACKAGES)
 
 
 install:
@@ -32,7 +32,7 @@ clean:
 
 
 test:
-
+	@./bin/install $(DOTPATH)/$(DOTFILESDIR) $(HOMEPATH)
 
 
 
