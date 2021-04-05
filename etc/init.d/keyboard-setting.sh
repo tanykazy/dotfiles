@@ -7,7 +7,7 @@ readonly TARGET=/etc/${X11_XORG_CONF_D}
 case "$1" in
 		install)
 				if [ ! -d "${TARGET}" ]; then
-						mkdir ${TARGET}
+						mkdir -p ${TARGET}
 				fi
 				for var in `ls -1 ${SCRIPT_DIR}/../${X11_XORG_CONF_D}/*`
 				do

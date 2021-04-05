@@ -83,6 +83,9 @@ set title
 " シンタックスハイライト
 syntax enable
 
+" for ctags
+set tags=./tags;tags;
+
 " タブ表示関連
 set list
 set listchars=tab:»-,trail:-,eol:$,extends:»,precedes:«,nbsp:%
