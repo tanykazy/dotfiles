@@ -1,9 +1,6 @@
 #!/bin/sh
 
-readonly SCRIPT_NAME=$(basename $0)
-readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
-readonly DOTFILESPATH=$(cd $(dirname ${SCRIPT_DIR}); pwd)
+readonly PACKAGES='make screen vim universal-ctags git xbindkeys'
 
-#export DOTPATH=${DOTFILESPATH}
-echo $1
+apt install ${PACKAGES}
 

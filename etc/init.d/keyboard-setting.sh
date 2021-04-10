@@ -1,8 +1,10 @@
 #!/bin/sh
 
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
+
 readonly X11_XORG_CONF_D=X11/xorg.conf.d
 readonly TARGET=/etc/${X11_XORG_CONF_D}
+
 
 case "$1" in
 		install)
