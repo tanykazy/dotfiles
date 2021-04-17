@@ -1,5 +1,8 @@
 #!/bin/sh
 
+readonly REPOSITORY='origin'
+readonly REFSPEC='main'
+
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
 readonly DOTFILESPATH=$(cd $(dirname ${SCRIPT_DIR}); pwd)
 
@@ -9,5 +12,5 @@ readonly KERNELRELEASE=$(uname --kernel-release)
 
 git add -v ${DOTFILESPATH}
 git commit -v -m "${MESSAGE}"
-git push -v origin main:${NODENAME}/${KERNELRELEASE}
+git push -v ${REPOSITORY} ${REFSPEC}:${NODENAME}/${KERNELRELEASE}
 
