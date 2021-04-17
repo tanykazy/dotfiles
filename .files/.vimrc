@@ -4,10 +4,10 @@
 " Last change:	2019 Jan 26
 "
 " To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+"   for Unix and OS/2:  ~/.vimrc
+"   for Amiga:  s:.vimrc
+"   for MS-DOS and Win32:  $VIM\_vimrc
+"   for OpenVMS:  sys$login:.vimrc
 
 " When started as "evim", evim.vim will already have done these settings, bail
 " out.
@@ -19,12 +19,12 @@ endif
 source $VIMRUNTIME/defaults.vim
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup      " do not keep a backup file, use versions instead
 else
-  set backup		" keep a backup file (restore to previous version)
+  set backup        " keep a backup file (restore to previous version)
   if has('persistent_undo')
     set undodir=~/.vim/undo
-    set undofile	" keep an undo file (undo changes after closing)
+    set undofile    " keep an undo file (undo changes after closing)
   endif
 endif
 
@@ -66,7 +66,12 @@ set showcmd
 
 " インデント幅
 set shiftwidth=4
-set tabstop=2
+
+" タブ
+set tabstop=4
+set expandtab
+set smarttab
+set softtabstop=4
 
 " 対応する括弧の強調
 set showmatch
@@ -74,7 +79,8 @@ set showmatch
 " yでコピーしたらクリップボードに入れる
 set guioptions+=a
 
-" スマートインデント
+" インデント
+set autoindent
 set smartindent
 
 " タイトル表示
@@ -84,7 +90,7 @@ set title
 syntax enable
 
 " for ctags
-set tags=./tags;tags;
+set tags+=./.tags;.tags;
 
 " タブ表示関連
 set list
