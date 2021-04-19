@@ -1,20 +1,16 @@
-#!/bin/bash
-
-# Swap CapsLock and Ctrl
-#setxkbmap -option ctrl:swapcaps
+#!/bin/sh
 
 # Start xbindkeys
 xbindkeys_autostart
 
 # Status text for dwm
+#dwmstatus 2>&1 >/dev/null &
 while true
 do
-	LOCALTIME="$(date)"
-	BATTERY="$(acpi -b)"
-#	IP=$(for i in `ip r`; do echo $i; done | grep -A 1 src | tail -n1) # can get confused if you use vmware
-	xsetroot -name "${LOCALTIME} ${BATTERY}"
-#	xsetroot -name "${IP} ${LOCALTIME} ${BATTERY}"
-#	wmname "$LOCALTIME"
-#	slstatus
-	sleep 1s
+    LOCALTIME="$(date)"
+    BATTERY="$(acpi -b)"
+    THERMAL="$(acpi -t)"
+    xsetroot -name "${THERMAL} ${BATTERY} ${LOCALTIME}"
+    sleep 1s
 done &
+
