@@ -69,7 +69,7 @@ set shiftwidth=4
 
 " タブ
 set tabstop=4
-set expandtab
+" set expandtab
 set smarttab
 set softtabstop=4
 
