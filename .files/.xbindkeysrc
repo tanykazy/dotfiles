@@ -59,5 +59,9 @@
 "xbacklight -inc 1"
    XF86MonBrightnessUp
 
+#Display
+"Command"
+   XF86Display
+
 #
 # End of xbindkeys configuration
