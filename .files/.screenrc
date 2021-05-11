@@ -105,6 +105,9 @@ windowlist string "%4n %h%=%f"
 # Enable Auto detach
 autodetach on
 
+# for color
+term xterm-256color
+
 # ------------------------------------------------------------------------------
 # STARTUP SCREENS
 # ------------------------------------------------------------------------------
