@@ -1,7 +1,7 @@
 XTerm*utf8: true
-XTerm*locale: true
+! XTerm*locale: true
 XTerm*selectToClipboard: true
-XTerm*faceName: 'Monospace'
+ XTerm*faceName: 'Monospace'
 XTerm*faceSize: 10
 XTerm*cjkWidth: true
 ! XTerm*reverseVideo: true

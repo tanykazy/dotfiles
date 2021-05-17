@@ -7,23 +7,23 @@ readonly TARGET=/etc/${X11_XORG_CONF_D}
 
 
 case "$1" in
-		install)
-				if [ ! -d "${TARGET}" ]; then
-						mkdir -p ${TARGET}
-				fi
-				for var in `ls -1 ${SCRIPT_DIR}/../${X11_XORG_CONF_D}/*`
-				do
-						ln -snv $(realpath ${var}) ${TARGET}
-				done
+	install)
+		if [ ! -d "${TARGET}" ]; then
+			mkdir -p ${TARGET}
+		fi
+		for var in `ls -1 ${SCRIPT_DIR}/../${X11_XORG_CONF_D}/*`
+		do
+			ln -snv $(realpath ${var}) ${TARGET}
+		done
 		;;
-		uninstall)
-				for var in `ls -1 ${SCRIPT_DIR}/../${X11_XORG_CONF_D}`
-				do
-						rm -fv ${TARGET}/${var}
-				done
+	uninstall)
+		for var in `ls -1 ${SCRIPT_DIR}/../${X11_XORG_CONF_D}`
+		do
+			rm -fv ${TARGET}/${var}
+		done
 		;;
-		*)
-				echo "Usage: $0 {install|uninstall}"
+	*)
+		echo "Usage: $0 {install|uninstall}"
 		;;
 esac
 
