@@ -4,13 +4,14 @@
 xbindkeys_autostart
 
 # Status text for dwm
-#dwmstatus 2>&1 >/dev/null &
-while true
-do
-    LOCALTIME="$(date)"
-    BATTERY="$(acpi -b)"
-    THERMAL="$(acpi -t)"
-    xsetroot -name "${THERMAL} ${BATTERY} ${LOCALTIME}"
-    sleep 1s
-done &
+dwmstatus 2>&1 >/dev/null &
+
+#while true
+#do
+#    LOCALTIME="$(date)"
+#    BATTERY="$(acpi -b)"
+#    THERMAL="$(acpi -t)"
+#    xsetroot -name "${THERMAL} ${BATTERY} ${LOCALTIME}"
+#    sleep 1s
+#done &
 
