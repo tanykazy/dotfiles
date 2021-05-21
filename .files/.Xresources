@@ -1,28 +1,29 @@
 XTerm*utf8: true
-! XTerm*locale: true
+XTerm*locale: true
 XTerm*selectToClipboard: true
- XTerm*faceName: 'Monospace'
+XTerm*faceName: 'Monospace'
+XTerm*faceNameDoublesize: 'Noto'
 XTerm*faceSize: 10
 XTerm*cjkWidth: true
+! xterm*ximFont: -misc-fixed-medium-r-normal--14-130-75-75-c-140-jisx0208.1983-0
 ! XTerm*reverseVideo: true
-
-*customization: color
-*background: #212121
-*foreground: #fafafa
-*color0: #212121
-*color1: #ef5350
-*color2: #66bb6a
-*color3: #ffca28
-*color4: #5c6bc0
-*color5: #ff7043
-*color6: #29b6f6
-*color7: #bdbdbd
-*color8: #a7c0cd
-*color9: #ff77a9
-*color10: #98ee99
-*color11: #fffd61
-*color12: #8e99f3
-*color13: #ffd95b
-*color14: #80d6ff
-*color15: #fafafa
+XTerm*customization: -color
+XTerm*background: #212121
+XTerm*foreground: #fafafa
+XTerm*color0: #212121
+XTerm*color1: #ef5350
+XTerm*color2: #66bb6a
+XTerm*color3: #ffca28
+XTerm*color4: #5c6bc0
+XTerm*color5: #ff7043
+XTerm*color6: #29b6f6
+XTerm*color7: #bdbdbd
+XTerm*color8: #a7c0cd
+XTerm*color9: #ff77a9
+XTerm*color10: #98ee99
+XTerm*color11: #fffd61
+XTerm*color12: #8e99f3
+XTerm*color13: #ffd95b
+XTerm*color14: #80d6ff
+XTerm*color15: #fafafa
 
