@@ -1,6 +1,6 @@
 #!/bin/sh
 
-readonly CONF_FILE=10-keyboard-setting.conf
+readonly CONF_FILE=10-backlight-intel.conf
 
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
 

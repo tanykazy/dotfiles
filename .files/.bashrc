@@ -122,4 +122,3 @@ if [[ -z "$STY" ]]; then
 	screen -xRR
 fi
 
-
