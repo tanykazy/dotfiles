@@ -1,0 +1,15 @@
+#!/bin/sh
+
+readonly REPOSITORY='origin'
+readonly REFSPEC='main'
+
+readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
+readonly DOTFILESPATH=$(cd $(dirname ${SCRIPT_DIR}); pwd)
+
+readonly MESSAGE="Update from $(uname -snr) at $(date)"
+readonly NODENAME=$(uname --nodename)
+readonly KERNELRELEASE=$(uname --kernel-release)
+
+git fetch -v ${REPOSITORY}
+git merge -v ${REPOSITORY}/${REFSPEC}
+
