@@ -52,16 +52,20 @@
    XF86AudioMicMute
 
 #MonBrightnessDown
-"xbacklight -dec 1"
+"xbacklight -dec 5%"
    XF86MonBrightnessDown
 
 #MonBrightnessUp
-"xbacklight -inc 1"
+"xbacklight -inc 5%"
    XF86MonBrightnessUp
 
 #Display
 "Command"
    XF86Display
+
+#Print
+"gnome-screenshot"
+   Print
 
 #
 # End of xbindkeys configuration
