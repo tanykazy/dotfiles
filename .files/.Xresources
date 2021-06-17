@@ -2,7 +2,7 @@ XTerm*utf8: true
 XTerm*locale: true
 XTerm*selectToClipboard: true
 XTerm*faceName: 'Monospace'
-XTerm*faceNameDoublesize: 'Noto'
+! XTerm*faceNameDoublesize: 'Noto'
 XTerm*faceSize: 10
 XTerm*cjkWidth: true
 ! xterm*ximFont: -misc-fixed-medium-r-normal--14-130-75-75-c-140-jisx0208.1983-0
