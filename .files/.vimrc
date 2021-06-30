@@ -23,7 +23,7 @@ if has("vms")
 else
 	set backup        " keep a backup file (restore to previous version)
 	if has('persistent_undo')
-		set undodir=~/.vim/undo
+		set undodir=.
 		set undofile    " keep an undo file (undo changes after closing)
 	endif
 endif
@@ -55,7 +55,6 @@ if exists('&ambw')
 	set ambiwidth=double
 endif
 
-" ADD tanykazy
 " 行番号表示
 set number
 
