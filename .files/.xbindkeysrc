@@ -64,8 +64,12 @@
    XF86Display
 
 #Print
-"gnome-screenshot"
+"scrot"
    Print
+
+#Print-Select
+"scrot --select"
+   Alt + Print
 
 #
 # End of xbindkeys configuration
