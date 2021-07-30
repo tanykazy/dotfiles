@@ -1,6 +1,6 @@
 #!/bin/sh
 
-readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight'
+readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight scrot'
 
 apt install ${PACKAGES}
 
