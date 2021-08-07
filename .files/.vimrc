@@ -116,3 +116,5 @@ set imactivatefunc=ImActivateFunc
 
 set imactivatekey=C-space
 
+filetype on
+
