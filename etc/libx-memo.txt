@@ -1,0 +1,7 @@
+for dwm
+libx11-dev
+libxinerama-dev
+libxft-dev
+
+for slock
+libxrandr-dev
