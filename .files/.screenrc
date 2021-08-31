@@ -35,6 +35,8 @@ vbell_msg "   Wuff  ----  Wuff!!  "
 # define a bigger scrollback, default is 100 lines
 defscrollback 1024
 
+maptimeout 10
+
 # ------------------------------------------------------------------------------
 # SCREEN KEYBINDINGS
 # ------------------------------------------------------------------------------
@@ -107,6 +109,7 @@ autodetach on
 
 # for color
 #term xterm-256color
+term xterm
 
 # ------------------------------------------------------------------------------
 # STARTUP SCREENS
