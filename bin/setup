@@ -1,6 +1,12 @@
 #!/bin/sh
 
-readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight scrot'
+readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight scrot xsettingsd'
+
+# theme
+#adapta-gtk-theme
+
+
+
 
 apt install ${PACKAGES}
 
