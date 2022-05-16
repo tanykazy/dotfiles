@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Start xsettingsd
+xsettingsd &
+
 # Start xbindkeys
 xbindkeys_autostart
 
