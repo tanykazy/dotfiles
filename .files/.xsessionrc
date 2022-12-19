@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Beep off
+xset -b
+
 # Start xsettingsd
 xsettingsd &
 
