@@ -1,6 +1,6 @@
 #!/bin/sh
 
-readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight scrot xsettingsd'
+readonly PACKAGES='keynav acpi make screen vim universal-ctags git xbindkeys xbacklight scrot xsettingsd'
 
 # theme
 #adapta-gtk-theme
