@@ -1,13 +1,6 @@
 #!/bin/sh
 
-<<<<<<< HEAD
 readonly PACKAGES='keynav acpi make screen vim universal-ctags git xbindkeys xbacklight scrot xsettingsd'
-||||||| 99ae809
-readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight scrot xsettingsd'
-=======
-readonly PACKAGES='acpi make screen vim universal-ctags git xbindkeys xbacklight scrot xsettingsd'
-# keynav
->>>>>>> origin/main
 
 # theme
 #adapta-gtk-theme
