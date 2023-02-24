@@ -117,8 +117,10 @@ export WCWIDTH_CJK_LEGACY=yes
 
 # Run screen(screen manager)
 if [[ -z "$STY" ]]; then
-	# exit command with detach
-	alias exit="screen -d $STY"
-	screen -xRR
+	if [[ ${TERM_PROGRAM} != "vscode" ]]; then
+		# exit command with detach
+		alias exit="screen -d $STY"
+		screen -xRR
+	fi
 fi
 

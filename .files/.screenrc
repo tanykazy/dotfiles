@@ -20,7 +20,7 @@
 # SCREEN SETTINGS
 # ------------------------------------------------------------------------------
 
-# Delete sartt up screen
+# Delete start up screen
 startup_message off
 #nethack on
 
