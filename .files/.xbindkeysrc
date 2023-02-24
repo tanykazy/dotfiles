@@ -60,7 +60,7 @@
    XF86MonBrightnessUp
 
 #Display
-"Command"
+""
    XF86Display
 
 #Print
