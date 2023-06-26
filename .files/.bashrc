@@ -113,7 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 # For Ambiguous
-export WCWIDTH_CJK_LEGACY=yes
+#export WCWIDTH_CJK_LEGACY=yes
 
 # Run screen(screen manager)
 if [[ -z "$STY" ]]; then
