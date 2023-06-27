@@ -2,11 +2,11 @@ XTerm*termName: xterm-256color
 XTerm*utf8: true
 XTerm*locale: true
 XTerm*selectToClipboard: true
-XTerm*faceName: 'Monospace'
-! XTerm*faceNameDoublesize: 'Noto'
+XTerm*faceName: DejaVu Sans Mono
+XTerm*faceNameDoublesize: Noto Sans Mono CJK JP
 XTerm*faceSize: 10
 XTerm*cjkWidth: true
-! XTerm*ximFont: -misc-fixed-medium-r-normal--14-130-75-75-c-140-jisx0208.1983-0
+XTerm*ximFont: Noto Sans Mono CJK JP
 ! XTerm*reverseVideo: true
 ! XTerm*customization: -color
 
