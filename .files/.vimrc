@@ -94,8 +94,8 @@ set listchars=tab:»-,trail:-,eol:$,extends:»,precedes:«,nbsp:%
 
 " 挿入モードを抜けると IM がオフ
 " 再度挿入モードに入ると IM 復元
-"set iminsert=0
-"set imsearch=-1
+set iminsert=0
+set imsearch=-1
 
 function ImActivateFunc(active)
 	if a:active
@@ -108,6 +108,9 @@ endfunction
 set imactivatefunc=ImActivateFunc
 
 "set imactivatekey=C-space
+
+"Clipboard共有
+set clipboard+=unnamed
 
 filetype on
 
