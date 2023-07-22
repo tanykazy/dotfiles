@@ -5,7 +5,7 @@ XTerm*selectToClipboard: true
 XTerm*faceName: DejaVu Sans Mono
 XTerm*faceNameDoublesize: Noto Sans Mono CJK JP
 XTerm*faceSize: 10
-XTerm*cjkWidth: true
+!XTerm*cjkWidth: true
 XTerm*ximFont: Noto Sans Mono CJK JP
 ! XTerm*reverseVideo: true
 ! XTerm*customization: -color
