@@ -64,11 +64,11 @@
    XF86Display
 
 #Print
-"scrot"
+"scrot - | xclip -selection clipboard -target image/png -i"
    Print
 
 #Print-Select
-"scrot --select"
+"scrot --select --freeze - | xclip -selection clipboard -target image/png -i"
    Alt + Print
 
 #
