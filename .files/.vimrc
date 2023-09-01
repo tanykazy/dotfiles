@@ -90,7 +90,7 @@ set tags+=./.tags;.tags;
 
 " タブ表示関連
 set list
-set listchars=tab:»-,trail:-,eol:$,extends:»,precedes:«,nbsp:%
+set listchars=tab:>-,trail:-,eol:$,extends:>,precedes:<,nbsp:% 
 
 " 挿入モードを抜けると IM がオフ
 " 再度挿入モードに入ると IM 復元
