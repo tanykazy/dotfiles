@@ -9,6 +9,9 @@ xsettingsd &
 # Start xbindkeys
 xbindkeys_autostart
 
+# Start bluetooth applet
+blueman-applet &
+
 # Status text for dwm
 dwmstatus 2>&1 >/dev/null &
 
