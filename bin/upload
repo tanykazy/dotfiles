@@ -6,11 +6,10 @@ readonly REFSPEC='main'
 readonly SCRIPT_DIR=$(cd $(dirname $0); pwd)
 readonly DOTFILESPATH=$(cd $(dirname ${SCRIPT_DIR}); pwd)
 
-readonly MESSAGE="Update from $(uname -snr) at $(date)"
-readonly NODENAME=$(uname --nodename)
-readonly KERNELRELEASE=$(uname --kernel-release)
+readonly OPERATINGSYSTEM=$(uname --operating-system)
+readonly MACHINE=$(uname --machine)
+readonly MESSAGE="Update from ${MACHINE} ${OPERATINGSYSTEM} at $(date)"
 
 git add -v ${DOTFILESPATH}
 git commit -v -m "${MESSAGE}"
-git push -v ${REPOSITORY} ${REFSPEC}:${NODENAME}/${KERNELRELEASE}
-
+git push -v ${REPOSITORY} ${REFSPEC}:${MACHINE}/${OPERATINGSYSTEM}
