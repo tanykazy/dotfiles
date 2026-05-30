@@ -107,6 +107,7 @@ function ImActivateFunc(active)
 endfunction
 set imactivatefunc=ImActivateFunc
 
+
 "set imactivatekey=C-space
 
 "Clipboard共有
@@ -115,7 +116,7 @@ set clipboard+=unnamed
 filetype on
 
 " AutoSave on Vim startup
-let g:auto_save = 1
+let g:auto_save = 0
 " change the 'updatetime' option
 let g:auto_save_no_updatetime = 1
 " save while in insert mode
@@ -124,4 +125,7 @@ let g:auto_save_in_insert_mode = 0
 let g:auto_save_silent = 0
 " this will run :TagsGenerate after each save
 " let g:auto_save_postsave_hook = 'TagsGenerate'
+
+
+
 
