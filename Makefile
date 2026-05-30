@@ -22,8 +22,15 @@ clean:
 
 
 install:
+
+ifdef FILE
+	@ln -snv $(abspath $(FILE)) $(HOMEPATH)/$(notdir $(FILE))
+
+else
 	@$(foreach val, $(DOTFILES), \
 		ln -snv $(abspath $(val)) $(HOMEPATH)/$(notdir $(val));)
+
+endif
 
 
 test:
